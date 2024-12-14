@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .code-container {
-  @apply w-full h-[350px] lg:h-[300px] flex flex-col items-start justify-center border-[1px] border-neutral-700;
+  @apply w-full h-[320px] flex flex-col items-start justify-center border-[1px] border-neutral-700;
 }
 .code-container-top {
   @apply w-24 h-1/6 bg-componentBgColor flex items-center justify-center text-white;
