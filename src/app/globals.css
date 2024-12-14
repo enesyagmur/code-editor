@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.code-container {
+  @apply w-full h-[350px] lg:h-[300px] flex flex-col items-start justify-center border-[1px] border-neutral-700;
+}
+.code-container-top {
+  @apply w-24 h-1/6 bg-componentBgColor flex items-center justify-center text-white;
+}
+.code-language {
+  @apply ml-1;
+}
+.code-textarea {
+  @apply w-full h-5/6  bg-componentBgColor text-neutral-200 focus:outline-none p-2;
+}
