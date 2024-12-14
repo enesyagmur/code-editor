@@ -17,9 +17,9 @@ export default function Home() {
       <Header />
       <div className="w-full h-[2140px] md:h-full flex flex-col md:flex-row">
         <div className="w-full h-3/6 md:h-full md:w-6/12 flex flex-col items-center justify-between">
-          <HtmlComponent setHtmlCode={setHtmlCode} />
-          <CssComponent setCssCode={setCssCode} />
-          <JavascriptComponent setJsCode={setJsCode} />
+          <HtmlComponent htmlCode={htmlCode} setHtmlCode={setHtmlCode} />
+          <CssComponent cssCode={cssCode} setCssCode={setCssCode} />
+          <JavascriptComponent jsCode={jsCode} setJsCode={setJsCode} />
         </div>
         <iframe
           className="w-full h-[1070px] md:h-full md:w-6/12 text-black bg-neutral-200 md:ml-2"

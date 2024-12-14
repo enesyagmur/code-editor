@@ -6,10 +6,16 @@
   @apply w-full h-[320px] flex flex-col items-start justify-center border-[1px] border-neutral-700;
 }
 .code-container-top {
-  @apply w-24 h-1/6 bg-componentBgColor flex items-center justify-center text-white;
+  @apply w-full h-1/6  flex items-center justify-between text-white;
 }
 .code-language {
+  @apply w-24 h-full flex items-center justify-center bg-componentBgColor;
+}
+.language {
   @apply ml-1;
+}
+.code-delete-btn {
+  @apply mr-6 cursor-pointer text-2xl hover:text-red-800;
 }
 .code-textarea {
   @apply w-full h-5/6  bg-componentBgColor text-neutral-200 focus:outline-none p-2;

@@ -1,16 +1,24 @@
 import React from "react";
 import { FaCss3Alt } from "react-icons/fa";
+import { FaDeleteLeft } from "react-icons/fa6";
 
 interface CssProps {
+  cssCode: string;
   setCssCode: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const CssComponent: React.FC<CssProps> = ({ setCssCode }) => {
+const CssComponent: React.FC<CssProps> = ({ cssCode, setCssCode }) => {
   return (
     <div className="code-container">
       <div className="code-container-top">
-        <FaCss3Alt className="text-blue-500" />
-        <p className="code-language">CSS</p>
+        <div className="code-language">
+          <FaCss3Alt className="text-blue-500" />
+          <p className="language">CSS</p>
+        </div>
+        <FaDeleteLeft
+          className="code-delete-btn"
+          onClick={() => setCssCode("")}
+        />
       </div>
 
       <textarea
@@ -19,6 +27,7 @@ const CssComponent: React.FC<CssProps> = ({ setCssCode }) => {
         name="Css"
         id="Css"
         onChange={(e) => setCssCode(e.target.value)}
+        value={cssCode}
       ></textarea>
     </div>
   );
