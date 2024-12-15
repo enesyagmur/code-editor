@@ -1,4 +1,3 @@
-import { useTheme } from "next-themes";
 import React from "react";
 import { FaHtml5 } from "react-icons/fa";
 import { FaDeleteLeft } from "react-icons/fa6";
@@ -9,31 +8,11 @@ interface HtmlProps {
 }
 
 const HtmlComponent: React.FC<HtmlProps> = ({ htmlCode, setHtmlCode }) => {
-  const { theme } = useTheme();
-
   return (
-    <div
-      className={`code-container ${
-        theme === "dark"
-          ? "bg-secondDarkColor text-lightColor"
-          : "bg-lightColor text-primaryDarkColor"
-      }`}
-    >
-      <div
-        className={`code-container-top ${
-          theme === "dark"
-            ? "bg-primaryDarkColor text-lightColor"
-            : "bg-orange-700 text-primaryDarkColor"
-        }`}
-      >
-        <div
-          className={`code-language ${
-            theme === "dark"
-              ? "bg-secondDarkColor text-lightColor"
-              : "bg-lightColor text-primaryDarkColor"
-          }`}
-        >
-          <FaHtml5 className="text-orange-700" />
+    <div className={`code-container`}>
+      <div className={`code-container-top`}>
+        <div className={`code-language`}>
+          <FaHtml5 className="text-orange-500" />
           <p className="language">HTML</p>
         </div>
         <FaDeleteLeft
@@ -43,14 +22,10 @@ const HtmlComponent: React.FC<HtmlProps> = ({ htmlCode, setHtmlCode }) => {
       </div>
 
       <textarea
-        className={`code-textarea ${
-          theme === "dark"
-            ? "bg-secondDarkColor text-lightColor"
-            : "bg-lightColor text-primaryDarkColor"
-        }`}
-        title="Html"
-        name="Html"
-        id="Html"
+        className={`code-textarea`}
+        title="HTML"
+        name="HTML"
+        id="HTML"
         onChange={(e) => setHtmlCode(e.target.value)}
         value={htmlCode}
       ></textarea>
