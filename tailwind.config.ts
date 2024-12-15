@@ -12,7 +12,6 @@ export default {
       colors: {
         primaryDarkColor: "#222831",
         secondDarkColor: "#31363F",
-        customBlue: "#76ABAE",
         lightColor: "#EEEEEE",
       },
     },

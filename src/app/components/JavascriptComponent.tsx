@@ -10,9 +10,9 @@ interface JsProps {
 const JavascriptComponent: React.FC<JsProps> = ({ jsCode, setJsCode }) => {
   return (
     <div className={`code-container`}>
-      <div className={`code-container-top`}>
-        <div className={`code-language`}>
-          <FaJsSquare className="text-yellow-500" />
+      <div className={`code-container-top bg-yellow-600`}>
+        <div className={`code-language `}>
+          <FaJsSquare className="text-yellow-600" />
           <p className="language">JS</p>
         </div>
         <FaDeleteLeft

@@ -10,9 +10,9 @@ interface CssProps {
 const CssComponent: React.FC<CssProps> = ({ cssCode, setCssCode }) => {
   return (
     <div className={`code-container`}>
-      <div className={`code-container-top`}>
+      <div className={`code-container-top bg-blue-700`}>
         <div className={`code-language`}>
-          <FaCss3Alt className="text-blue-500" />
+          <FaCss3Alt className="text-blue-700" />
           <p className="language">CSS</p>
         </div>
         <FaDeleteLeft

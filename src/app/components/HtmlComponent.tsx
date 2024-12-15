@@ -10,9 +10,9 @@ interface HtmlProps {
 const HtmlComponent: React.FC<HtmlProps> = ({ htmlCode, setHtmlCode }) => {
   return (
     <div className={`code-container`}>
-      <div className={`code-container-top`}>
+      <div className={`code-container-top bg-orange-700`}>
         <div className={`code-language`}>
-          <FaHtml5 className="text-orange-500" />
+          <FaHtml5 className="text-orange-700" />
           <p className="language">HTML</p>
         </div>
         <FaDeleteLeft

@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <div
-      className={`w-full md:h-[1070px] flex flex-col items-center justify-center p-2`}
+      className={`w-full md:h-[1070px] flex flex-col items-center justify-center p-2 bg-primaryDarkColor text-lightColor`}
     >
       <Header />
       <div className="w-full h-[2140px] md:h-full flex flex-col md:flex-row">
@@ -24,7 +24,7 @@ export default function Home() {
           <JavascriptComponent jsCode={jsCode} setJsCode={setJsCode} />
         </div>
         <iframe
-          className={`w-full h-[1070px] md:h-full md:w-6/12 rounded-lg  mt-6 md:mt-2  md:ml-2 border-[1px] border-neutral-500 `}
+          className={`w-full h-[1070px] md:h-full md:w-6/12 rounded-lg  mt-6 md:mt-2  md:ml-2 border-[1px] border-neutral-500 bg-lightColor text-primaryDarkColor`}
           id="output"
           srcDoc={`<html>
     <head>

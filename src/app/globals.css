@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
 .code-container {
   @apply w-full h-[350px] md:h-[320px] flex flex-col items-start justify-center rounded-lg border-[1px] border-neutral-500 md:mt-2;
 }
@@ -13,14 +9,31 @@ html {
   @apply w-full h-1/6  flex items-center justify-between rounded-t-lg;
 }
 .code-language {
-  @apply w-24 h-full flex items-center justify-center text-lg rounded-tl-lg;
+  @apply w-24 h-full flex items-center justify-center text-lg rounded-tl-lg bg-secondDarkColor;
 }
 .language {
   @apply ml-1;
 }
 .code-delete-btn {
-  @apply mr-6 cursor-pointer text-2xl hover:text-red-800;
+  @apply mr-6 cursor-pointer text-2xl hover:text-primaryDarkColor;
 }
 .code-textarea {
-  @apply w-full h-5/6 focus:outline-none p-2 rounded-b-lg;
+  @apply w-full h-5/6 focus:outline-none p-2 rounded-b-lg bg-secondDarkColor;
+}
+
+::-webkit-scrollbar {
+  width: 16px; /* Add width for the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #505867;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #25292f;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #eeeeee;
 }
