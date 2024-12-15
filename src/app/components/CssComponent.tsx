@@ -1,3 +1,4 @@
+import { useTheme } from "next-themes";
 import React from "react";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaDeleteLeft } from "react-icons/fa6";
@@ -8,12 +9,32 @@ interface CssProps {
 }
 
 const CssComponent: React.FC<CssProps> = ({ cssCode, setCssCode }) => {
+  const { theme } = useTheme();
+
   return (
-    <div className="code-container">
-      <div className="code-container-top">
-        <div className="code-language">
+    <div
+      className={`code-container ${
+        theme === "dark"
+          ? "bg-secondDarkColor text-lightColor"
+          : "bg-lightColor text-primaryDarkColor"
+      }`}
+    >
+      <div
+        className={`code-container-top ${
+          theme === "dark"
+            ? "bg-primaryDarkColor text-lightColor"
+            : "bg-blue-500 text-primaryDarkColor"
+        }`}
+      >
+        <div
+          className={`code-language ${
+            theme === "dark"
+              ? "bg-secondDarkColor text-lightColor"
+              : "bg-lightColor text-primaryDarkColor"
+          }`}
+        >
           <FaCss3Alt className="text-blue-500" />
-          <p className="language">CSS</p>
+          <p className="language">Css</p>
         </div>
         <FaDeleteLeft
           className="code-delete-btn"
@@ -22,7 +43,11 @@ const CssComponent: React.FC<CssProps> = ({ cssCode, setCssCode }) => {
       </div>
 
       <textarea
-        className="code-textarea"
+        className={`code-textarea ${
+          theme === "dark"
+            ? "bg-secondDarkColor text-lightColor"
+            : "bg-lightColor text-primaryDarkColor"
+        }`}
         title="Css"
         name="Css"
         id="Css"
