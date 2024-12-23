@@ -21,8 +21,12 @@
   @apply w-full h-5/6 focus:outline-none p-2 rounded-b-lg bg-secondDarkColor;
 }
 
+.html-code-color {
+  @apply text-orange-700;
+}
+
 ::-webkit-scrollbar {
-  width: 16px; /* Add width for the scrollbar */
+  width: 16px;
 }
 
 ::-webkit-scrollbar-track {

@@ -44,4 +44,3 @@ export default function Home() {
     </div>
   );
 }
-// dark mode
