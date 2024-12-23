@@ -1,5 +1,6 @@
 import React from "react";
-import { AiFillCodepenCircle } from "react-icons/ai";
+import logo from "../favicon.ico";
+import Image from "next/image";
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
       <div
         className={`w-6/12 md:w-3/12 h-full flex items-center justify-star text-2xl `}
       >
-        <AiFillCodepenCircle className="" />
+        <Image src={logo} alt="logo" width={25} height={25} />
         <p className="font-semibold ml-2">Code Editor</p>
       </div>
 
