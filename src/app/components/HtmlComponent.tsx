@@ -34,17 +34,3 @@ const HtmlComponent: React.FC<HtmlProps> = ({ htmlCode, setHtmlCode }) => {
 };
 
 export default HtmlComponent;
-/*
-<div class="container">
-  <div class="box">
-    <h1>Hoşgeldiniz</h1>
-    <p>
-      Bu şık ve modern bir kod düzenleyici arayüzüdür. Düzeni özelleştirin,
-      kodunuzu yazın ve projelerinizi gerçek zamanlı olarak önizleyin. Basitlik
-      ve performansa odaklanarak tasarlanan bu düzenleyici, her seviyeden
-      geliştirici için mükemmeldir.
-    </p>
-    <button class="cta-button">Yeni bir sayfa ile hemen Başlayın</button>
-  </div>
-</div>;
-*/
