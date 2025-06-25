@@ -6,7 +6,7 @@ Bu proje, **HTML**, **CSS** ve **JavaScript** kodlarınızı doğrudan tarayıc�
 
 ## 🔗 Link
 
-[https://lnkd.in/dPs3uKNg](https://lnkd.in/dPs3uKNg)
+[[https://lnkd.in/dPs3uKNg](https://lnkd.in/dPs3uKNg)](https://code-editor-liard-tau.vercel.app)
 
 ## Proje Görüntüsü 
 ![code-editor-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/3f6685e4-8e3a-4803-a062-be16c31a2b1d)
