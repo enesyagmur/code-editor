@@ -1,39 +1,50 @@
-# Code Editor Projesi
+# 💻 Code Editor Projesi
 
-Bu proje, HTML, CSS ve JavaScript kodlarınızı tarayıcı üzerinde denemenizi sağlayan bir code editor uygulamasıdır. Proje, modern web teknolojileri kullanılarak geliştirilmiştir ve responsive bir tasarıma sahiptir.
+Bu proje, **HTML**, **CSS** ve **JavaScript** kodlarınızı doğrudan tarayıcı üzerinde yazıp test edebileceğiniz bir **kod editörü** uygulamasıdır. Modern web teknolojileri ile geliştirilmiş ve mobil uyumlu (responsive) bir tasarıma sahiptir.
 
-## Bağlantılar
+---
 
-- 🔗 [Canlı Demo](https://lnkd.in/dPs3uKNg)
-- 🔗 [GitHub Reposu](https://lnkd.in/dxbfFT5H)
+## 🔗 Canlı Demo
 
-## Özellikler
+[https://lnkd.in/dPs3uKNg](https://lnkd.in/dPs3uKNg)
 
-- **Tarayıcı Üzerinde Kod Deneme**: HTML, CSS ve JavaScript kodlarınızı tarayıcı üzerinde anında görüntüleyebilir ve test edebilirsiniz.
-- **Responsive Tasarım**: Mobil ve masaüstü cihazlarda sorunsuz çalışan responsive bir tasarım.
+---
 
-## Kullanılan Teknolojiler
+## 🚀 Özellikler
 
-- **Typescript**: Projenin temel dilidir.
-- **Next.js**: React tabanlı bir framework olarak kullanıldı.
-- **Tailwind CSS**: Hızlı ve esnek bir CSS framework'ü olarak tercih edildi.
-- **React Icons**: Projede kullanılan ikonlar için tercih edildi.
-- **React Hooks**: State ve lifecycle yönetimi için kullanıldı.
+- 🧪 **Anlık Önizleme**  
+  HTML, CSS ve JavaScript kodlarını tarayıcı üzerinde gerçek zamanlı olarak görüntüleyin ve test edin.
 
-## Kurulum
+- 📱 **Responsive Tasarım**  
+  Mobil, tablet ve masaüstü cihazlarda sorunsuz çalışan esnek arayüz.
 
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
+---
 
-Depoyu klonlayın:
-   git clone https://github.com/kullanici/code-editor-projesi.git
+## 🛠️ Kullanılan Teknolojiler
 
-   Proje dizinine gidin:
+| Teknoloji      | Açıklama                                       |
+|----------------|------------------------------------------------|
+| ⚙️ TypeScript   | Projenin güçlü tip güvenliği için tercih edildi |
+| ⚛️ Next.js      | React tabanlı hızlı ve SEO uyumlu framework     |
+| 🎨 Tailwind CSS | Esnek ve ölçeklenebilir stil yönetimi          |
+| 💎 React Icons  | UI için ikon desteği                           |
+| 🔁 React Hooks  | Bileşen içi state ve efekt yönetimi            |
+
+---
+
+## ⚙️ Kurulum
+
+Aşağıdaki adımları takip ederek projeyi kendi bilgisayarınızda çalıştırabilirsiniz:
+
+```bash
+# 1. Depoyu klonlayın
+git clone https://github.com/kullanici/code-editor-projesi.git
+
+# 2. Proje dizinine geçin
 cd code-editor-projesi
 
-Gerekli bağımlılıkları yükleyin:
+# 3. Bağımlılıkları yükleyin
 npm install
 
-Projeyi başlatın:
+# 4. Geliştirme sunucusunu başlatın
 npm run dev
-
-Tarayıcınızda http://localhost:3000 adresine giderek projeyi görüntüleyin.
